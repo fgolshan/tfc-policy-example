@@ -1,7 +1,7 @@
 import "time"
 
-# Validate time is between 8 AM and 8 PM
-valid_time = rule { time.now.hour >= 8 and time.now.hour < 20 }
+# Validate time is between 8 AM and 11 PM
+valid_time = rule { time.now.hour >= 8 and time.now.hour < 23 }
 
 # Validate day is M - Sa
 valid_day = rule {
